@@ -1,11 +1,7 @@
-import torch
-from torch import nn
-
-from simple_linear_regression.model import build_model
-from train import Trainer
 from data_generation import generate_data
 from data_preparation import prepare_data
-
+from simple_linear_regression.model import build_model
+from train import Trainer
 
 if __name__ == '__main__':
     model, loss_fn, optimizer = build_model()
